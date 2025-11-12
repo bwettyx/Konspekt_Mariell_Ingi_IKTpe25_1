@@ -57,12 +57,25 @@
             }
             else if (kasutajaPikkus < 1.50 && kasutajaPikkus >= 1.25d)
             {
-            Console.WriteLine("OIOI, päkapikk enam ei olegi, "+nimi);
+                Console.WriteLine("OIOI, päkapikk enam ei olegi, "+nimi);
             }
             else if (kasutajaPikkus < 1.75d && kasutajaPikkus >= 1.5d)
             {
-                Console.WriteLine(nimi+", oled enamasti 
+                Console.WriteLine(nimi+", oled enamasti standardipikkuses, kui mitte kui mitte just natuke lühike");
+            }
+            else if (kasutajaPikkus < 2.00d && kasutajaPikkus >= 1.75d)
+            {   
+                Console.WriteLine(nimi+, oled pikk kolge, vaata et sa pead vastu uksepiita ära ei löö 😏'")
+            }
+            else
+            {
+                Console.WriteLine("Täielik tulnukas! Kuidas pilved välja näevad lähedalt?");
+            }
 
+            //3. kalkulaator ifi ja else-ifiga, int ja string andmetüübid
+            Console.WriteLine("tere, sisesta esimene liidetav arv");
+            int arv1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("tere, sisesta teine liidetav arv");
         }
     }
 }
