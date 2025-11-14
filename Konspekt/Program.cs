@@ -76,6 +76,109 @@
             Console.WriteLine("tere, sisesta esimene liidetav arv");
             int arv1 = int.Parse(Console.ReadLine());
             Console.WriteLine("tere, sisesta teine liidetav arv");
-        }
+            int arv2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("sisesta themärk: / * + - ^");
+            string tehtetyyp = Console.ReadLine();
+
+            int tulemus = 0;
+            if (tehtetyyp == "+")
+            {
+                tulemus = arv1 + arv2;
+            }  
+            if (tehtetyyp == "-")
+            {
+                tulemus = arv1 - arv2;
+            }
+            if (tehtetyyp == "*")
+            { 
+                tulemus = arv1 * arv2;
+            }
+            if (tehtetyyp == "/")
+            {
+                tulemus = arv1 / arv2;
+            }
+            if (tehtetyyp == "^")
+            {
+                tulemus = (int)Math.Pow(arv1, arv2);
+            }
+
+						Console.WriteLine(tulemus);
+
+            //4 parool, if ja string andmetüüp
+            Console.WriteLine($"Palun vabandust {nimi}, aga programmi edasiseks tööks on parooli vaja");
+            string password = Console.ReadLine();
+            if (password == "simsalabim")
+            {
+                Console.WriteLine("JES, parool on õige, oled sisse lubatud");
+            }
+            else if (password == "saatana" || password == "1234")
+            {
+                Console.WriteLine("Parool on sobimatu, see sinu parool kohe kindlasti ei ole.");
+            }
+            else
+            {
+                Console.WriteLine("Parool on vale");
+            }
+
+            //5 värvituvastus värvidele: punane oranz kollane roheline
+            // helesinine tumesinine lilla roosa pruun must ja valge
+            Console.WriteLine("Mis on sinu lemmikvärv?:");
+            string favColour = Console.ReadLine();
+            if (favColour == "punane")
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+            }
+            else if (favColour == "oranz")
+            {
+                Console.WriteLine("Kahjuks ei ole oranz saadaval");
+            }
+            else if (favColour == "kollane")
+            {
+                Console.BackgroundColour = ConsoleColor.Yellow;
+            }
+            else if (favColour == "roheline"
+            }
+                Console.BackgroundColor = ConsoleColor.DarkGreen;
+            {
+            else if (favColour == "helesinine")
+            }
+                Console.BackgroundColor = ConsoleColor.Cyan;
+            }
+            else if (favColor == "tumesinine")
+            {
+                Console.BackgroundColor = ConsoleColor.Blue;
+            }   
+            else if (favColor == "lilla")
+            {
+                Console.BackgroundColor = ConsoleColor.DarkCyan;
+            }
+            else if (favColor == "roosa")
+            {
+                Console.WriteLine("Kahjuks roosat anda ei ole");
+            }
+            else if (facColour == "pruun")
+            }
+                Console.BackgroundColor = ConsoleColor.DarkYellow;
+            }
+            else if (favColour == "must")
+            {
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.BackgroundColor = ConsoleColor.White;
+            }
+            else
+            {
+                Console.BackgroundColor = ConsoleColor.White;
+                Console.BackgroundColor = ConsoleColor.Black;
+            }
+            else
+            {
+                Console.WriteLine("ei tea seda värvi");
+            }
+            Console.WriteLine("The colour has maybe changed!!!!!");
+            */
+            /* ISESEISEV ÜLESANNE '/
+
+            //# Kolija kalkulaator - Kirjuta programm mis:
+            //#    - Küsib kasutajalt kas ta tahab ära mõõta
     }
 }
