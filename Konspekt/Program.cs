@@ -44,7 +44,7 @@
             }
 
             //2.3 mitu vahemikku if/else-if abil. andmetüüp double/float/decimal
-            Console.WriteLine($"Sisesta oma pikkus ka {nimi}!";
+            Console.WriteLine($"Sisesta oma pikkus ka {nimi}!");
             double kasutajaPikkus = double.Parse(Console.ReadLine());
 
             if (kasutajaPikkus < 1.00d)
@@ -64,8 +64,8 @@
                 Console.WriteLine(nimi+", oled enamasti standardipikkuses, kui mitte kui mitte just natuke lühike");
             }
             else if (kasutajaPikkus < 2.00d && kasutajaPikkus >= 1.75d)
-            {   
-                Console.WriteLine(nimi+, oled pikk kolge, vaata et sa pead vastu uksepiita ära ei löö 😏'")
+            {
+            Console.WriteLine(nimi + "oled pikk kolge, vaata et sa pead vastu uksepiita ära ei löö 😏'");
             }
             else
             {
@@ -134,30 +134,30 @@
             }
             else if (favColour == "kollane")
             {
-                Console.BackgroundColour = ConsoleColor.Yellow;
+                Console.BackgroundColor = ConsoleColor.Yellow;
             }
-            else if (favColour == "roheline"
-            }
-                Console.BackgroundColor = ConsoleColor.DarkGreen;
+            else if (favColour == "roheline")
             {
-            else if (favColour == "helesinine")
+                Console.BackgroundColor = ConsoleColor.DarkGreen;
             }
+            else if (favColour == "helesinine")
+            { 
                 Console.BackgroundColor = ConsoleColor.Cyan;
             }
-            else if (favColor == "tumesinine")
+            else if (favColour == "tumesinine")
             {
                 Console.BackgroundColor = ConsoleColor.Blue;
             }   
-            else if (favColor == "lilla")
+            else if (favColour == "lilla")
             {
                 Console.BackgroundColor = ConsoleColor.DarkCyan;
             }
-            else if (favColor == "roosa")
+            else if (favColour == "roosa")
             {
                 Console.WriteLine("Kahjuks roosat anda ei ole");
             }
-            else if (facColour == "pruun")
-            }
+            else if (favColour == "pruun")
+            { 
                 Console.BackgroundColor = ConsoleColor.DarkYellow;
             }
             else if (favColour == "must")
@@ -165,7 +165,7 @@
                 Console.BackgroundColor = ConsoleColor.Black;
                 Console.BackgroundColor = ConsoleColor.White;
             }
-            else
+            else if(favColour == "valge")
             {
                 Console.BackgroundColor = ConsoleColor.White;
                 Console.BackgroundColor = ConsoleColor.Black;
@@ -175,10 +175,40 @@
                 Console.WriteLine("ei tea seda värvi");
             }
             Console.WriteLine("The colour has maybe changed!!!!!");
-            */
-            /* ISESEISEV ÜLESANNE '/
+            
+            /* ISESEISEV ÜLESANNE */
 
             //# Kolija kalkulaator - Kirjuta programm mis:
-            //#    - Küsib kasutajalt kas ta tahab ära mõõta
-    }
-}
+            //#    - Küsib kasutajalt kas ta tahab ära mõõta pappkasti või õlitünni.
+            //Console.WriteLine("Kas tahad mõõta ära kasti või tünni?");
+            //string valik = Console.ReadLine();
+            ////#    - olenevalt kasutaja sisestusest küsib ta:
+            //if (valik == "tünn")
+            //{
+
+            //    //#    - - tünni jaoks:
+            //    //#    - - - kas kasutaja teeb põhja raadiust (r) või põhja läbimõõtu (d):
+            //    Console.WrtieLine("Kas sa tead tünni raadiust (r) või põhja läbimõõtu (d)");
+            //    string rvõid = Console.ReadLine();
+            //    Console.WriteLine("Sisesta see mõõt:");
+            //    double mõõt = double.Parse(Console.ReadLine());
+            //    if (rvõid == "d")
+            //    {
+            //        mõõt = mõõt / 2;
+            //    }
+            //    else if(rvõid != "r")
+            //    {
+            //        Console.WriteLine("Sisend ei ole tuttav");
+            //    }
+
+            //    //#    - - - tünni kõrgust
+            //    Console.WriteLine("Kui kõrge on su tünn");
+            //    int kõrgus = int.Parse(Console.ReadLine());
+
+            //    //#    - - - kaane paksust (kaane paksus võtab tünni kõrgusest maha, kuna kaan võtab tünni sisust natuke ruumi)
+            //    Console.WriteLine("kui paks on yünni kaas?");
+            //    int kaanepaksus = int.Parse(Console.ReadLine());
+
+            //    //#    - - - Arvutab tünni ruumala mahu, tünni küljepindala, tünni kogupindala
+            //    double tünnipõhis = Math.PI * (mõõt * mõõt);
+            //    double mahtV = tünnipõhiS * (kõrgus - kaanepaksus);
