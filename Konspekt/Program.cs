@@ -212,3 +212,49 @@
             //    //#    - - - Arvutab tünni ruumala mahu, tünni küljepindala, tünni kogupindala
             //    double tünnipõhis = Math.PI * (mõõt * mõõt);
             //    double mahtV = tünnipõhiS * (kõrgus - kaanepaksus);
+
+            /* meetodid */
+
+            // Meetodid on väljakutsutavad koodijupid. Meetodid teostavad tavaliselt mingeid funktsioone või tegevusi.
+            // Meetodid lasevad programmeerijal taaskasutada oma eelnevalt kirjutatud koodi - write once use many times.
+            // Meetodeid on kahte liiki - ühed, mis tagastavad andmeid mingisuguse töö tulemina, ja teised, mis ei tagasta
+            // midagi, kuid omavad siisiki mingit tegevust.
+
+            // Meetodi signatuur:
+            // Meetodi signatuur koosneb mitmest kindlalt äramääratud omadustest, nendeks on:
+            // - Juurdepääsu modifikaator mis ütleb ära, kust ja kuidas sellele meetodile juurde pääseda saab
+            //   public - meetod on avalik ja kättesaadav ka teistes klassides peale selle, kus meetod ise asub.
+            //   private - meetod on saadav ainult selles klassis, kus meetod ise asub.
+            //   protected - meetod on saadav ainult selles klassis, kus meetod ise asub ja kõikides klassides millen on pärilus
+            //               sellele klassile.
+            //   internal - meetod on saadav ainult selles klassis ja ainult selles failis.
+            // - Võib olla ka pandud static - meetod kuulub selle klassi juurde
+            // - Tagastustüüp on modifikaator mis ütleb ära, mis tüüpi andmeid meetod tagasi annab kutsumise asukohta.
+            //   Andmetüüp mida tagastada võib olla ükskõik milline liht või kombinatsioonandmetüüp, aga kui meetod ei tagasta
+            //   üldse andmeid, pannakse selle asemel andmetüübiks "void".
+
+            // 1. tüüpi meetod - ei tagasta midagi
+            public static void UusMeetod() //meetodi signatuur, mis omab juurdepääsumodifikaatorit "public", "static" ütleb et
+                                           //ta on selle klassi oma, tagastustüüp "void" ütleb et andmeid meie meetod ei tagasta
+                                           //ning pärast meetodi omadusi on meetodi nimi "UusMeetod" peale mida on sulud, kus
+                                           //parameetreid ei ole.
+            {                              //pärast signatuuri on koodiplokk meetodi koodiga {}
+                Console.WriteLine("Tere"); //Antud juhul meetod kuvab konsooli sõnumi.
+            }
+            // 2. tüüpi meetod - tagastab väärtuse
+            int[] arvutatavadArvud = new int[] { 3, 67, 420 }; //Töödeldavad andmed, mis asuvad täisarvumassiivis, muutujanimega
+                                                               //"arvutatavadArvud".
+            public static int ArvutaKokku(int[] arvud) //Meetod, mille signatuuris on juurdepääsumodifikaator public, static
+                                                       //ütleb et meetod kuulub siia klassi, tagastustüüp "int" ütleb, et
+                                                       //programmis väljakutseasukohta tagastatakse täisarv, peale seda on
+                                                       //meetodi nimi "ArvutaKokku" ning sulgude vahel ootab meetod täisarvumassiivi
+                                                       //millele pannakse meetodi sees ajutine nimi arvud. Peale signatuuri on
+                                                       //koodiplokk {} tehtava koodiga.
+            {
+                int summa = 0; //Tekitatakse täisarvuandmetüüpi muutuja nimega "summa", kuhu esialgu omistatakse arv 0.
+                foreach (int i in arvud) //foreach tsükliga käiakse kõik täisarvumassiivi "arvud" arvud läbi
+                {
+                    summa += i; //ja muutujale summa lisatakse juurde, hetkel käidav element.
+                }
+                return summa; //pärast tsükli töö lõppu tagastatakse "return" käsu abil, muutuja summa sisu.
+            }
