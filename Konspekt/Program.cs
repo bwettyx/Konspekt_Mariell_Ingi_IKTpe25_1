@@ -212,8 +212,64 @@
             //    //#    - - - Arvutab tünni ruumala mahu, tünni küljepindala, tünni kogupindala
             //    double tünnipõhis = Math.PI * (mõõt * mõõt);
             //    double mahtV = tünnipõhiS * (kõrgus - kaanepaksus);
+			//	  double küljepindala = tünnipõhis * kõrgus;
+            //    double kogupindala = (tünnipõhis * 2) + küljepindala;
+            //    Console.WriteLine($"Sinu tünn mahutab {mahtV} \nTünni küljepindala on {küljepindala} \nKogupindala aga on{kogupindala}");
+			//}
+			////#    - - kasti jaoks:
+			//else if(valik == "kast")
+			//{
+			//    //#    - - - Kas kast on kuubiku kujuline või risttahuka kujuline
+			//    Console.WriteLine("Kas su kast on kuubik (k) või risttahukas (r)? ");
+			//    string kastitüüp = Console.ReadLine();
+			//    if (kastitüüp == "k")
+			//    {
+			//        //#    - - - - kui on kuubik, siis küsiib kasutajalt ainult küljepikkust
+			//        Console.WriteLine("Sisesta kasti küljepikkus:");
+			//		  double külgA = double.Parse(Console.ReadLine());
+			//        double kuubik = Math.Pow(külgA, 3);
+			//		  double küljepindala = (külgA * külgA) * 6;
+			//        double diagonaal = külgA * Math.Sqrt(3);
+			//        Console.WriteLine($"Sinu kuubik mahutab {kuubik} \nKuubiku küljepindala on {küljepindala} \nDiagonaal aga on{diagonaal}");
+            //    }
+			//    //#    - - - - kui on risttahukas siis küsib kasutajalt:
+			//    else if (kastitüüp == "r")
+			//    {
+			//        //#    - - - - - pikima külje pikkust,
+			//        Console.WriteLine("Mis on sinu kasti kõige pikim külg?:");
+			//        double pikkkülg = double.Parse(Console.ReadLine());
 
-            /* meetodid */
+			//        //#    - - - - - lühima külje pikkust ja
+			//        Console.WriteLine("Mis on sinu kasti kõige lühim külg?:");
+            //        double lühikekülg = double.Parse(Console.ReadLine());
+
+			//		  //#    - - - - - kasti kõrgust
+			//		  Console.WriteLine("Mis on sinu kasti kõrgus?:");
+			//		  double kõrgus = double.Parse(Console.ReadLine());
+
+			//        //#    - - arvutab vastavalt kasti kogupindala, mahu, ja pikima läbiva joone (d)
+			//		  double V = pikkkülg * lühikekülg * kõrgus;
+			//		  double kogpindala = 2 * ((pikkkülg * lühikekülg) + 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* meetodid */
 
             // Meetodid on väljakutsutavad koodijupid. Meetodid teostavad tavaliselt mingeid funktsioone või tegevusi.
             // Meetodid lasevad programmeerijal taaskasutada oma eelnevalt kirjutatud koodi - write once use many times.
